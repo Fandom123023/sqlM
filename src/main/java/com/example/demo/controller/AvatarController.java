@@ -1,19 +1,14 @@
-
-
 package com.example.demo.controller;
 
-import jakarta.annotation.Resource;
+import com.example.demo.model.Avatar;
+import com.example.demo.service.AvatarService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import ru.hogwarts.school.model.Avatar;
-import ru.hogwarts.school.service.AvatarService;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.util.List;
 
 @RestController
@@ -21,7 +16,7 @@ import java.util.List;
 public class AvatarController {
     private final AvatarService avatarService;
 
-    public AvatarController(AvatarService avatarService){
+    public AvatarController( AvatarService avatarService){
         this.avatarService = avatarService;
     }
 

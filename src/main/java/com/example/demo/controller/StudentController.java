@@ -1,9 +1,12 @@
-package Controller;
+package com.example.demo.controller;
+
+import com.example.demo.model.Student;
+import com.example.demo.service.StudentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.hogwarts.school.model.Student;
-import ru.hogwarts.school.service.StudentService;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/student")

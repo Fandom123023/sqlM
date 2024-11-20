@@ -1,7 +1,9 @@
-package repository;
+package com.example.demo.repository;
 
+
+
+import com.example.demo.model.Faculty;
 import org.springframework.data.jpa.repository.JpaRepository;
-import ru.hogwarts.school.model.Faculty;
 
 import java.util.List;
 
